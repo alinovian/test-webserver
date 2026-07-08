@@ -1,13 +1,16 @@
+;
+; BIND forward data file for alinovian.local
+;
 $TTL    604800
-@       IN      SOA     alinovian.id. root.alinovian.id. (
+@       IN      SOA     alinovian.local. root.alinovian.local. (
                               2         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache
 ;
-@       IN      NS      alinovian.id.
+@       IN      NS      alinovian.local.
 @       IN      A       192.168.13.3
-@       IN      MX 10   mail.alinovian.id.
+@       IN      MX 10   mail.alinovian.local.
 www     IN      A       192.168.13.3
 mail    IN      A       192.168.13.3
